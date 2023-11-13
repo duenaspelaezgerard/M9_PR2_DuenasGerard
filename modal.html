@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/d622ed5aa3.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container text-light">
+          <a class="navbar-brand" href="#">
+            <a href="index.html"><img src="src/vanilla.svg" alt="" width="30" height="25" class="d-inline-block align-text-top"></a>
+              Vanilla Games
+          </a>
+          <div class="navbar-nav mx-auto">
+              <a class="nav-link active" href="#">Home</a>
+              <a class="nav-link" href="#">Top5 Proyectos</a>
+              <a class="nav-link" href="#">Acerca de</a>
+          </div>
+          <ul class="nav">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-light" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                  PROYECTOS <img src="src/usuario.png" alt="Dropdown Icon" width="30" height="30">
+                </a>
+                <ul class="dropdown-menu text-start">
+                  <li><a class="dropdown-item" href="detalle.html">Detalle</a></li>
+                  <li><a class="dropdown-item" href="administracion.html">Panel de Administracion</a></li>
+                  <li><a class="dropdown-item" href="administracion2.html">Panel de Administracion 2</a></li>
+                  <li><a class="dropdown-item" href="proyectos.html">Proyectos</a></li>
+                  <li><a class="dropdown-item" href="edicion.html">Edicion</a></li>
+                  <li><a class="dropdown-item" href="nuevoProyecto.html">Nuevo Proyecto</a></li>
+                </ul>
+            </li>
+          </ul>
+      </div>
+    </nav>
+  
+    <!-- MAIN -->
+    <div class="container mt-5">
+      <h1>Modal para editar perfil</h1>
+      <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#Modal">
+        Demo Modal
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Edición de perfil</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="card">
+                <div class="card-body">
+                  <form>
+                    <div class="mb-3 border border-secondary shadow p-2">
+                      <img class="mx-auto d-block" src="src/illustration-of-user-icon-in-gray-color-vector.jpg" style="height: 235px;" alt="">
+                      <label for="imagen" class="form-label">URL de la Imagen:</label>
+                      <input type="text" class="form-control" id="imagen" placeholder="http://imagenavatar.com">
+                  </div>                  
+                    <div class="mb-3">
+                      <label for="nombre" class="form-label">Nombre:</label>
+                      <input type="text" class="form-control" id="nombre">
+                    </div>
+                    <div class="mb-3">
+                      <label for="apellidos" class="form-label">Apellidos:</label>
+                      <input type="text" class="form-control" id="apellidos">
+                    </div>
+                    <div class="mb-3">
+                      <label for="email" class="form-label">Email:</label>
+                      <input type="email" class="form-control" id="email">
+                    </div>
+                    <div class="mb-3">
+                      <label for="contrasena" class="form-label">Contraseña:</label>
+                      <input type="password" class="form-control" id="contrasena">
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="text-end mt-3">
+                <button type="button" class="btn btn-secondary me-2" data-bs-dismiss="modal">Cancelar</button>
+                <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <nav class="fixed-bottom text-center bg-secondary py-3">
+      <div class="row">
+        <div class="col">
+          <img src="src/vanilla.svg" alt="" width="30" height="25" class="d-inline-block align-text-top">
+          FPLlefià
+        </div>
+        <div class="col">
+          DAW - Asignatura de proyectos
+        </div>
+        <div class="col">
+          carrebola GITHUB
+        </div>
+      </div>
+    </nav>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
